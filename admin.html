@@ -21,8 +21,8 @@
 		            <div class="navbar-header">
 				    	<div class="container-fluid">
 		    				<div class="navbar-header">
-		      					<a class="navbar-brand" href="#">
-		        					<img alt="Brand" src="...">
+		      					<a class="navbar-brand" href="#" style="padding: 5px">
+		        					<img alt="Brand" src="assets/images/logo.png" height="35" style="margin-bottom:10px">
 		      					</a>
 		    				</div>
 		  				</div>
@@ -40,12 +40,13 @@
 			                    <input type="text" placeholder="Queue Number" class="form-control" id="queue">
 			                    <label class="glyphicon glyphicon-search" title="queue"></label>
 			                </div>
-		            	</div>				    	
+		            	</div>		
+		            	<button type="submit" class="btn btn-default">Search</button>		    	
 				    </form>
-				    <button type="submit" class="btn btn-default">Search</button>
+				    
 		            <ul class="nav navbar-nav navbar-right">
 				        <li class="dropdown">
-				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				          	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
 				          	<ul class="dropdown-menu">
 
 					   		</ul>
@@ -58,45 +59,48 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-7" align="center">				
-					<div class="panel panel-default">
-						<div class="panel-heading">
+					<div class="panel panel-queue ">
+						<div class="panel-heading ">
 							<h3>มีจำนวนในระบบทั้งหมด</h3>
 						</div>
-						<div class="panel-body">
-							<div class="panel panel-default queue-box">
-								<div class="panel-body">
-									<form class="form-group" id="queue" action="" method="POST">
-										<div class="queue-header">โรงพยาบาลผู้ป่วยอายุรกรรม</div>
+						<form class="form-group" id="queue" method="POST">
+							<div class="panel-body">
+								<div class="panel panel-default  col-sm-10 col-sm-offset-1">
+									<div class="panel-body text-center">
+										<div class="queue-header">โรงพยาบาล</div>
+										<div class="queue-header">ผู้ป่วยอายุรกรรม</div>
 										<div class="queue-number">006</div>
-										<div align="right">*เบอร์โทรศัพท์มือถือ</div>
-										<div>
-											<input class="form-control" type="text" name="tel">
-										</div>
-									</form>
-								</div>
+										<div class="col-sm-6 col-sm-offset-3 tel-input" >
+											<div align="left">*เบอร์โทรศัพท์มือถือ</div>
+											<input class="form-control" type="text" placeholder="กรอกเบอร์โทรศัพท์ปัจจุบัน" name="tel">
+										</div>						
+									</div>
+									
 							</div>
-							<button id="submit">จองคิว</button>
-
+							<div class="col-sm-10 col-sm-offset-1">
+								<button id="submit" class="btn btn-queue btn-block" ">จองคิว</button>
+							</div>
+						</form>
 						</div>
 					</div>
 					
 				</div>
 				<div class="col-xs-6 col-md-5" align="center">
-					<div class="panel panel-default">
+					<div class="panel panel-default panel-queuetable">
 						<div class="panel-heading">
 							<h3>ตารางปัจจุบัน</h3>
 						</div>
-						<div class="panel-body">
+						<div class="panel-body " id="queue-table">
 							<table class="table table-hover">
 							<thead>
-								<tr>
-									<th>Queue</th>
-									<th>Tel.</th>
-									<th>Room</th>
+								<tr >
+									<th>หมายเลข</th>
+									<th>เบอร์โทร</th>
+									<th>ห้อง</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
+								<tr class="first-queue">
 									<td>1</td>
 									<td>089-XXX-XXXX</td>
 									<th>2</th>
@@ -104,7 +108,27 @@
 								<tr>
 									<td>2</td>
 									<td>083-XXX-XXXX</td>
-									<th>1x</th>
+									<th>1</th>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>083-XXX-XXXX</td>
+									<th>1</th>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>083-XXX-XXXX</td>
+									<th>1</th>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>083-XXX-XXXX</td>
+									<th>1</th>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>083-XXX-XXXX</td>
+									<th>1</th>
 								</tr>
 							</tbody>
 							</table>
@@ -116,18 +140,6 @@
 	    
 	    <script src="assets/js/bootstrap.min.js"></script>
 	    <script src="assets/js/jquery-3.1.1.min"></script>
-	    <script type="text/javascript">
-	      $(document).ready(
-	        function(){
-	          $('#submit').click(
-	            function(){
-	              if ($(this).val()){
-	                $('#queue').submit();
-	              }
-	            }
-	          );
-	        }
-	      );
-	    </script>
+	    
 	</body>
 </html>

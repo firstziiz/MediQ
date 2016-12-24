@@ -1,4 +1,12 @@
 
+.first-queue {
+	color: #f26e7b;
+}
+.queue-table {
+	color: ;
+	background-color: #e1e1e1; 
+}
+
 @font-face {
     font-family: quark;
 	src: url(../fonts/quark-bold.otf);
@@ -43,6 +51,24 @@
 }
 .queue-header {
 	font-size: 28px;
+}
+.panel-queuetable>.panel-heading  {
+	color: #999999;
+    background-color: #e1e1e1;
+    border-color: #e1e1e1;
+}
+.panel-queue {
+    border-color: #78cdd4;
+}
+.panel-queue>.panel-heading {
+    color: #fff;
+    background-color: #78cdd4;
+    border-color: #78cdd4;
+}
+.btn-queue {
+    color: #fff;
+    background-color: #f26e7b;
+    border-color: #f26e7b;
 }
 
 .home .navbar{
