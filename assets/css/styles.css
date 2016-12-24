@@ -1,3 +1,19 @@
+
+@font-face {
+    font-family: quark;
+	src: url(../fonts/quark-bold.otf);
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: quark;
+    src: url(../fonts/quark-light.otf);
+}
+
+* {
+	font-family: quark;
+}
+
 .queue-box {
 	margin: 20px 80px 20px 80px
 }
@@ -28,3 +44,5 @@
 .queue-header {
 	font-size: 28px;
 }
+
+.home .navbar{}
