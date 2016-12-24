@@ -45,4 +45,53 @@
 	font-size: 28px;
 }
 
-.home .navbar{}
+.home .navbar{
+	background: white;
+}
+
+.home .navbar-header{
+	text-align: center;
+	width: 100%;
+}
+
+.home a.navbar-brand{
+	margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.home a.navbar-brand img{
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+.home .que-box h1{
+	font-weight: bold;
+	font-size: 46px;
+	margin: 8px;
+}
+
+.home .que-box h2{
+	font-size: 26px;
+	margin: 8px;
+}
+
+.home .que-box .tel-text{
+	font-size: 14px;
+}
+
+.home .que-box .tel{
+	color: #78cdd4;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.home .que-box .ques{
+	font-size: 16px;
+}
+
+.home .que-box {
+	margin: 0 auto;
+	max-width: 320px;
+}
