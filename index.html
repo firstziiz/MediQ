@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>MediQ : Booking Hostital Application</title>
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -40,22 +40,60 @@
 					<p class="tel">0957788XXX</p>
 					<p class="ques">จำนวนคิวทั้งหมด 50 คน</p>
 					<hr>
-					<div class="row text-center">
+					<div class="row text-center time">
 						<div class="col-xs-4 hour">
 							<p>ชั่วโมง</p>
 							<h2>03</h2>
 						</div>
-						<div class="col-xs-4 hour">
+						<div class="col-xs-4 min">
 							<p>นาที</p>
 							<h2>11</h2>
 						</div>
-						<div class="col-xs-4 hour">
+						<div class="col-xs-4 sec">
 							<p>วินาที</p>
 							<h2>59</h2>
 						</div>
+						<div class="marking pull-right">
+							*เวลาอาจมีการคาดเคลื่อนได้
+						</div>
 					</div>
 					<hr>
-
+					<a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+						<h3 class="text-left">เบื่อไหม หาไรทำ? <span style="font-size: 20px;" class="glyphicon glyphicon-chevron-down pull-right"></span></h3>
+					</a>
+					<div class="collapse" id="collapseExample">
+						<div class="well">
+							<div><a href="#">คุณเป็นโรคเครียดไม่รู้ตัวหรือเปล่า ?</a></div>
+							<div><a href="#">คุณมีความเสี่ยงเป็นโรคมะเร็งมากแค่ไหน ?</a></div>
+						</div>
+					</div>
+					<a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+						<h3 class="text-left">รอนาน ทำไรดี? <span style="font-size: 20px;" class="glyphicon glyphicon-chevron-down pull-right"></span></h3>
+					</a>
+					<div class="collapse" id="collapseExample2">
+						<div class="well">
+							<div><a href="#">รอคิวหมอศิริราชนาน ? เที่ยวพิพิธภัณฑ์ในนั้นดูไหม</a></div>
+							<div><a href="#">ซื้อกาแฟดอยตุงในศิริราช รับส่วนลด 20%</a></div>
+						</div>
+					</div>
+					<a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+						<h3 class="text-left">ว่างๆ หาไรอ่าน? <span style="font-size: 20px;" class="glyphicon glyphicon-chevron-down pull-right"></span></h3>
+					</a>
+					<div class="collapse" id="collapseExample2">
+						<div class="well">
+							<div><a href="#">ตำนานซีอุย ในพิพิธภัณฑ์การแพทย์ศิริราช</a></div>
+						</div>
+					</div>
+					<a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+						<h3 class="text-left">เรื่องดีน่าทำ <span style="font-size: 20px;" class="glyphicon glyphicon-chevron-down pull-right"></span></h3>
+					</a>
+					<div class="collapse" id="collapseExample2">
+						<div class="well">
+							<div><a href="#">บริจาคเลือด</a></div>
+							<div><a href="#">บริจาคร่างกาย</a></div>
+							<div><a href="#">บริจาคอวัยวะ</a></div>
+						</div>
+					</div>
 				</div>
 			</div>
 			</div>
@@ -65,5 +103,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
+
   </body>
 </html>

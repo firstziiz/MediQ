@@ -95,3 +95,20 @@
 	margin: 0 auto;
 	max-width: 320px;
 }
+
+.home .time h2{
+	color: #f26e7b;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.marking {
+	color: #f26e7b;
+	margin-right: 10px;
+	padding: 0;
+	font-size: 12px;
+}
+
+.home .collapse a {
+	font-size: 18px;
+}
